@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found Report</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+    <div class="a4-container" id="all">
+        <h2>Lost and Found Report</h2>
+
+        <form id="myForm">
+
+
+            <!-- قسم المبلغ عن المفقود -->
+            <h3>Reporter's Information</h3>
+            <label for="reporterName">Name:</label>
+            <input type="text" id="reporterName" required>
+
+            <label for="reporterPhone">Phone Number:</label>
+            <input type="text" id="reporterPhone" required>
+
+            <label for="reporterID">ID Number:</label>
+            <input type="text" id="reporterID" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" required>
+
+            <h3>Item Information</h3>
+            <label for="itemName">Name of Item:</label>
+            <input type="text" id="itemName" required>
+
+            <label for="itemType">Type of Item:</label>
+            <input type="text" id="itemType" required>
+
+            <label for="itemDescription">Item Description:</label>
+            <textarea id="itemDescription" rows="3" required></textarea>
+
+            <!-- قسم بيانات المستلم -->
+            <h3>Recipient's Information</h3>
+            <label for="employeeName">Employee Name:</label>
+            <input type="text" id="employeeName" required>
+
+            <label for="supervisorName">Supervisor Name:</label>
+            <input type="text" id="supervisorName" required>
+
+            <label for="dispatcherName">Dispatcher Name:</label>
+            <input type="text" id="dispatcherName" required>
+
+            <label for="storageLocation">Storage Location:</label>
+            <input type="text" id="storageLocation" required>
+
+            <!-- قسم بيانات صاحب المفقود -->
+            <h3>Owner Information</h3>
+            <label for="ownerName">Name:</label>
+            <input type="text" id="ownerName" required>
+
+            <label for="ownerPhone">Phone Number:</label>
+            <input type="text" id="ownerPhone" required>
+
+            <label for="ownerID">ID Number:</label>
+            <input type="text" id="ownerID" required>
+
+            <label for="retrievalDate">Date of Retrieval:</label>
+            <input type="date" id="retrievalDate" required>
+
+            <label for="retrievalTime">Time of Retrieval:</label>
+            <input type="time" id="retrievalTime" required>
+
+            <button type="button" onclick="download_pdf()">Download PDF</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
