@@ -25,7 +25,7 @@ body {
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     overflow: auto;
-    font-size: 12px; /* تصغير الخط */
+    font-size: 10px; /* تصغير الخط بشكل عام */
 }
 
 /* العناوين */
@@ -33,14 +33,15 @@ h2 {
     text-align: center;
     margin-bottom: 15px;
     color: #333;
-    font-size: 10px;
+    font-size: 8px; /* تصغير حجم العنوان الرئيسي */
     padding-top: 18px;
 }
+
 h3 {
     color: #444;
     margin-top: 20px;
     margin-bottom: 10px;
-    font-size: 16px; /* تصغير حجم العناوين الفرعية */
+    font-size: 12px; /* تصغير حجم العناوين الفرعية */
     background-color: #7ab1eb8b;
     text-align: center;
     border-radius: 7px;
@@ -61,18 +62,18 @@ h3 {
 /* تنسيق الحقول */
 label {
     display: block;
-    font-size: 12px; /* تصغير حجم الخط */
+    font-size: 10px; /* تصغير حجم الخط بشكل عام */
     color: #555;
     margin-bottom: 5px;
 }
 
 input, textarea {
     width: 100%;
-    padding: 8px; /* تصغير حجم الحقول */
+    padding: 6px; /* تصغير حجم الحقول */
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 14px; /* تصغير الخط */
+    font-size: 10px; /* تصغير الخط بشكل عام */
 }
 
 textarea {
@@ -82,18 +83,19 @@ textarea {
 /* تنسيق الزر */
 button {
     border: #fff;
+    font-size: 10px; /* تصغير حجم الزر */
+    padding: 6px;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header img{
-    width: 100px;
+
+.header img {
+    width: 90px; /* تصغير الصورة بشكل عام */
 }
-
-
 
 /* إعدادات الطباعة */
 @media print {
@@ -118,5 +120,69 @@ button {
 
     button {
         display: none; /* إخفاء الزر عند الطباعة */
+    }
+}
+
+/* استعلامات الوسائط لتصغير الخط في الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .a4-container {
+        width: 100%;
+        height: auto;
+        font-size: 8px; /* تصغير الخط أكثر للشاشات الصغيرة */
+    }
+
+    h2 {
+        font-size: 6px; /* تصغير حجم العنوان الرئيسي */
+    }
+
+    h3 {
+        font-size: 9px; /* تصغير حجم العناوين الفرعية */
+    }
+
+    label, input, textarea {
+        font-size: 8px; /* تصغير الخط في الحقول */
+    }
+
+    .column {
+        width: 100%; /* جعل الأعمدة تأخذ عرض كامل في الشاشات الصغيرة */
+    }
+
+    button {
+        font-size: 9px; /* تصغير حجم الزر */
+        padding: 5px;
+    }
+
+    /* تصغير الصورة في الشاشات الصغيرة */
+    .header img {
+        width: 70px; /* تصغير الصورة بنسبة 30% */
+    }
+}
+
+/* استعلامات الوسائط لتصغير الخط أكثر في الشاشات الأصغر */
+@media (max-width: 480px) {
+    .a4-container {
+        font-size: 6px; /* تصغير الخط أكثر */
+    }
+
+    h2 {
+        font-size: 4px; /* تصغير حجم العنوان الرئيسي أكثر */
+    }
+
+    h3 {
+        font-size: 6px; /* تصغير حجم العناوين الفرعية أكثر */
+    }
+
+    label, input, textarea {
+        font-size: 6px; /* تصغير الخط في الحقول أكثر */
+    }
+
+    button {
+        font-size: 7px; /* تصغير حجم الزر */
+        padding: 4px;
+    }
+
+    /* تصغير الصورة أكثر في الشاشات الأصغر */
+    .header img {
+        width: 50px; /* تصغير الصورة بنسبة 50% */
     }
 }
