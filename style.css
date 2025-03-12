@@ -19,7 +19,7 @@ body {
 .a4-container {
     background: #fff;
     width: 397px; /* تم تقسيم 794px على 2 */
-    height: 600px; /* تم تقسيم 1100px على 2 */
+    height: 560px; /* تم تقسيم 1100px على 2 */
     padding: 10px; /* تم تقسيم 20px على 2 */
     border-radius: 5px; /* تم تقسيم 10px على 2 */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* تم تقسيم 4px و 10px على 2 */
@@ -34,7 +34,7 @@ h2{
     color: #333;
     font-size: 7px; /* تم تقسيم 14px على 2 */
     padding-top: 9px; /* تم تقسيم 18px على 2 */
-    background-color: red;
+    background-color: rgb(0, 255, 17);
 
 }
 
