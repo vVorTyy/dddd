@@ -6,84 +6,99 @@
     font-family: 'Arial', sans-serif;
 }
 
-/* تصميم الصفحة */
+/* تثبيت حجم الصفحة */
 body {
     background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding: 20px;
+    height: 50vh; /* تم تقسيم 100vh على 2 */
+    padding: 10px; /* تم تقسيم 20px على 2 */
+    overflow: hidden;
 }
-
-/* جعل الفورم بحجم A4 دائمًا */
 .a4-container {
     background: #fff;
-    width: 794px;
-    height: 1100px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 397px; /* تم تقسيم 794px على 2 */
+    height: 600px; /* تم تقسيم 1100px على 2 */
+    padding: 10px; /* تم تقسيم 20px على 2 */
+    border-radius: 5px; /* تم تقسيم 10px على 2 */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* تم تقسيم 4px و 10px على 2 */
     overflow: auto;
-    font-size: 12px; /* تصغير الخط */
+    font-size: 6px; /* تم تقسيم 12px على 2 */
 }
 
-/* العناوين */
-h2 {
+
+h2{
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 7px; /* تم تقسيم 15px على 2 */
     color: #333;
-    font-size: 10px;
-    padding-top: 18px;
+    font-size: 7px; /* تم تقسيم 14px على 2 */
+    padding-top: 9px; /* تم تقسيم 18px على 2 */
 }
+
 
 h3 {
     color: #444;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 16px; /* تصغير حجم العناوين الفرعية */
+    margin-top: 10px; /* تم تقسيم 20px على 2 */
+    margin-bottom: 5px; /* تم تقسيم 10px على 2 */
+    font-size: 8px; /* تم تقسيم 16px على 2 */
     background-color: #7ab1eb8b;
     text-align: center;
-    border-radius: 7px;
-    padding: 5px 0px;
+    border-radius: 4px; /* تم تقسيم 7px على 2 */
+    padding: 3px 0px; /* تم تقسيم 5px على 2 */
 }
 
-/* تنسيق الحقول بجانب بعضها */
+
+
+
 .row {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 5px; /* تم تقسيم 10px على 2 */
 }
+
+
 
 .column {
-    width: 48%;
+    width: 24%; /* تم تقسيم 48% على 2 */
 }
 
-/* تنسيق الحقول */
+
+
+
 label {
     display: block;
-    font-size: 12px; /* تصغير حجم الخط */
+    font-size: 6px; /* تم تقسيم 12px على 2 */
     color: #555;
-    margin-bottom: 5px;
+    margin-bottom: 3px; /* تم تقسيم 5px على 2 */
 }
+
+
 
 input, textarea {
     width: 100%;
-    padding: 8px; /* تصغير حجم الحقول */
-    margin-bottom: 10px;
+    padding: 4px; /* تم تقسيم 8px على 2 */
+    margin-bottom: 5px; /* تم تقسيم 10px على 2 */
     border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px; /* تصغير الخط */
+    border-radius: 3px; /* تم تقسيم 5px على 2 */
+    font-size: 7px; /* تم تقسيم 14px على 2 */
 }
+
+
 
 textarea {
     resize: none;
 }
 
-/* تنسيق الزر */
+
+
+
 button {
-    border: #fff;
+    border: none;
 }
+
+
+
 
 .header {
     display: flex;
@@ -92,95 +107,5 @@ button {
 }
 
 .header img {
-    width: 100px;
-}
-
-/* إعدادات الطباعة */
-@media print {
-    @page {
-        size: A4;
-        margin: 0;
-    }
-
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .a4-container {
-        box-shadow: none;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 20px;
-    }
-
-    button {
-        display: none; /* إخفاء الزر عند الطباعة */
-    }
-}
-
-/* استعلامات الوسائط لتصغير الخط في الشاشات الصغيرة */
-@media (max-width: 768px) {
-    .a4-container {
-        width: 100%;
-        height: auto;
-        font-size: 9px; /* تصغير الخط أكثر للشاشات الصغيرة */
-    }
-
-    h2 {
-        font-size: 7px; /* تصغير حجم العنوان الرئيسي */
-    }
-
-    h3 {
-        font-size: 10px; /* تصغير حجم العناوين الفرعية */
-    }
-
-    label, input, textarea {
-        font-size: 9px; /* تصغير الخط في الحقول */
-    }
-
-    .column {
-        width: 100%; /* جعل الأعمدة تأخذ عرض كامل في الشاشات الصغيرة */
-    }
-
-    button {
-        font-size: 10px; /* تصغير حجم الزر */
-        padding: 6px;
-    }
-
-    /* تصغير الصورة في الشاشات الصغيرة */
-    .header img {
-        width: 80px; /* تصغير الصورة بنسبة 20% */
-    }
-}
-
-/* استعلامات الوسائط لتصغير الخط أكثر في الشاشات الأصغر */
-@media (max-width: 480px) {
-    .a4-container {
-        font-size: 8px; /* تصغير الخط أكثر */
-    }
-
-    h2 {
-        font-size: 6px; /* تصغير حجم العنوان الرئيسي أكثر */
-    }
-
-    h3 {
-        font-size: 8px; /* تصغير حجم العناوين الفرعية أكثر */
-    }
-
-    label, input, textarea {
-        font-size: 8px; /* تصغير الخط في الحقول أكثر */
-    }
-
-    button {
-        font-size: 9px; /* تصغير حجم الزر */
-        padding: 4px;
-    }
-
-    /* تصغير الصورة أكثر في الشاشات الأصغر */
-    .header img {
-        width: 60px; /* تصغير الصورة بنسبة 40% */
-    }
+    width: 50px; /* تم تقسيم 100px على 2 */
 }

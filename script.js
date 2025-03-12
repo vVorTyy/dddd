@@ -3,7 +3,7 @@ function download_pdf() {
 
     const pdfContent = document.getElementById("all");
 
-    html2canvas(pdfContent, { scale: 2 }).then(canvas => {
+    html2canvas(pdfContent, { scale: 3 }).then(canvas => {
         const imgData = canvas.toDataURL("image/jpeg", 1.0);
         const pdf = new jsPDF({
             orientation: "portrait",
