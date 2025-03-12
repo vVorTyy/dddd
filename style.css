@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh; /* تم تقسيم 100vh على 2 */
+    height: 75vh; /* تم تقسيم 100vh على 2 */
     padding: 10px; /* تم تقسيم 20px على 2 */
     overflow: hidden;
 }
@@ -60,11 +60,8 @@ h3 {
 
 
 .column {
-    width: 24%; /* تم تقسيم 48% على 2 */
+    width: 48%; /* تم تقسيم 48% على 2 */
 }
-
-
-
 
 label {
     display: block;
