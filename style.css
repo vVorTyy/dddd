@@ -34,7 +34,6 @@ h2 {
     color: #333;
     font-size: 5.6px; /* 7px × 0.8 */
     padding-top: 7.2px; /* 9px × 0.8 */
-    background-color: rgb(229, 255, 0);
 }
 
 
@@ -43,7 +42,29 @@ h3 {
     margin-top: 8px; /* 10px × 0.8 */
     margin-bottom: 4px; /* 5px × 0.8 */
     font-size: 6.4px; /* 8px × 0.8 */
-    background-color: #7ab1eb8b;
+    background-color: #5cabff59;
+    text-align: center;
+    border-radius: 2px; /* 4px × 0.8 */
+    padding: 2.4px 0px; /* 3px × 0.8 */
+}
+
+.h3-2 {
+    color: #444;
+    margin-top: 8px; /* 10px × 0.8 */
+    margin-bottom: 4px; /* 5px × 0.8 */
+    font-size: 6.4px; /* 8px × 0.8 */
+    background-color: #ffcc00ad;
+    text-align: center;
+    border-radius: 3.2px; /* 4px × 0.8 */
+    padding: 2.4px 0px; /* 3px × 0.8 */
+}
+
+.h3-3 {
+    color: #444;
+    margin-top: 8px; /* 10px × 0.8 */
+    margin-bottom: 4px; /* 5px × 0.8 */
+    font-size: 6.4px; /* 8px × 0.8 */
+    background-color: #2bff00;
     text-align: center;
     border-radius: 3.2px; /* 4px × 0.8 */
     padding: 2.4px 0px; /* 3px × 0.8 */
