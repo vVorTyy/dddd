@@ -5,9 +5,9 @@ function download_pdf() {
         .set({
             margin: 0,
             filename: "lost_and_found_report.pdf",
-            image: { type: 'jpeg', quality: 1 },
+            image: { type: 'jpeg', quality: 0.7 },
             html2canvas: { scale: 5 },
-            jsPDF: { unit: 'mm', format: [155, 105], orientation: 'portrait' } // الأبعاد مقسمة على 2
+            jsPDF: { unit: 'mm', format: [105, 148.5], orientation: 'portrait' } // الأبعاد مقسمة على 2
         })
         .from(pdfContent)
         .save();
